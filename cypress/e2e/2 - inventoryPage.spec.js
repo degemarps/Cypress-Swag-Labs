@@ -1,7 +1,7 @@
 /// <reference types='cypress'/>
 
 import { Login } from "../Page Objects/Login"
-import { HomePage } from "../Page Objects/homePage"
+import { HomePage } from "../Page Objects/inventoryPage"
 
 describe('Suite tests for inventory page', () => {
   const login = new Login()
@@ -12,7 +12,7 @@ describe('Suite tests for inventory page', () => {
     login.makeLogin('standard_user', 'secret_sauce')
   })
   
-  it('Buy a producy', () => {
+  it('Add a product to a cart and remove after', () => {
     homePage.addProductToCart('Sauce Labs Backpack')
   })
 })
