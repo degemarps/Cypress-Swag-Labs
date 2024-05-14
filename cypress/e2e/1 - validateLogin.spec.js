@@ -2,10 +2,10 @@
 
 import { Login } from "../Page Objects/Login"
 
-describe('Suite tests for login', () => {
+describe('Suite tests for login screen', () => {
   const login = new Login()
 
-  beforeEach(() => {
+  before(() => {
     cy.visit('/')
   })
 
