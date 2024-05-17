@@ -1,9 +1,25 @@
 export class Login{
-  makeLogin(username, password){
-    cy.get('[data-test="username"]').type(username)
-    cy.get('[data-test="password"]').type(password)
-    cy.get('[data-test="login-button"]').click()
+  username() {
+    return cy.get('[data-test="username"]')
+  }
 
-    cy.get('[id="shopping_cart_container"]')
+  password() {
+    return cy.get('[data-test="password"]')
+  }
+
+  loginButton() {
+    return cy.get('[data-test="login-button"]')
+  }
+
+  shoppingCartIconContainer() {
+    return cy.get('[id="shopping_cart_container"]')
+  }
+
+  login(username, password){
+    this.username().type(username)
+    this.password().type(password)
+    this.loginButton().click()
+
+    this.shoppingCartIconContainer().should('be.visible')
   }
 }

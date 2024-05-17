@@ -9,7 +9,7 @@ describe('Suite tests for inventory page', () => {
 
   beforeEach(() => {
     cy.visit('/')
-    login.makeLogin('standard_user', 'secret_sauce')
+    login.login('standard_user', 'secret_sauce')
   })
   
   it('Add a product to a cart and remove after', () => {

@@ -10,6 +10,6 @@ describe('Suite tests for login screen', () => {
   })
 
   it('Login with a valid user', () => {
-    login.makeLogin('standard_user', 'secret_sauce')
+    login.login('standard_user', 'secret_sauce')
   })
 })
