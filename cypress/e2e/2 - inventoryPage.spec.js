@@ -14,5 +14,6 @@ describe('Suite tests for inventory page', () => {
   
   it('Add a product to a cart and remove after', () => {
     homePage.addProductToCart('Sauce Labs Backpack')
+    homePage.removeProductFromCart('Sauce Labs Backpack')
   })
 })
