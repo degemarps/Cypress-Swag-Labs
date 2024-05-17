@@ -1,11 +1,11 @@
 /// <reference types='cypress'/>
 
 import { Login } from "../Page Objects/Login"
-import { HomePage } from "../Page Objects/inventoryPage"
+import { InventoryPage } from "../Page Objects/InventoryPage"
 
 describe('Suite tests for inventory page', () => {
   const login = new Login()
-  const homePage = new HomePage()
+  const inventoryPage = new InventoryPage()
 
   beforeEach(() => {
     cy.visit('/')
@@ -13,7 +13,7 @@ describe('Suite tests for inventory page', () => {
   })
   
   it('Add a product to a cart and remove after', () => {
-    homePage.addProductToCart('Sauce Labs Backpack')
-    homePage.removeProductFromCart('Sauce Labs Backpack')
+    inventoryPage.addProductToCart('Sauce Labs Backpack')
+    inventoryPage.removeProductFromCart('Sauce Labs Backpack')
   })
 })

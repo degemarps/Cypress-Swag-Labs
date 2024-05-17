@@ -1,4 +1,4 @@
-export class HomePage {
+export class InventoryPage {
   productsList(){
     return cy.get('div.inventory_item_description')
   }
