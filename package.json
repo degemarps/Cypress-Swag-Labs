@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "cypress": "^13.13.2",
+    "typescript": "^5.5.4"
+  },
+  "name": "cypress-swag-labs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:degemarps/Cypress-Swag-Labs.git",
+  "author": "degemar.silva <degemarpereira@gmail.com>",
+  "license": "MIT"
+}
