@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "test:run": "npx cypress run",
+    "test:open": "npx cypress open"
+  },
   "devDependencies": {
     "cypress": "^13.13.2",
     "typescript": "^5.5.4"
@@ -8,5 +12,9 @@
   "main": "index.js",
   "repository": "git@github.com:degemarps/Cypress-Swag-Labs.git",
   "author": "degemar.silva <degemarpereira@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.1.2",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.2"
+  }
 }
